@@ -3,7 +3,7 @@
 void dec2bin(int *arr, int N)
 {
     int i = 0;
-    int mask = 0;
+    uint mask = 0;
     while(N >= mask) //add check
     {
         mask = (1 << i);
@@ -38,6 +38,6 @@ int solution(int N)
 
 int main()
 {
-    std::cout << "max len is: " << solution(529) <<  std::endl;
+    std::cout << "max len is: " << solution(247483647) <<  std::endl;
     return 0;
 }
