@@ -4,7 +4,7 @@ void dec2bin(int *arr, int N)
 {
     int i = 0;
     uint mask = 0;
-    while(N >= mask) //add check
+    while(N >= mask)
     {
         mask = (1 << i);
         arr[i] = N & mask ? true : false;
